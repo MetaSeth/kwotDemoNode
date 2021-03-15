@@ -1,0 +1,32 @@
+{
+  "name": "kwotdemoapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "tsc && node dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MetaSeth/kwotDemoApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MetaSeth/kwotDemoApp/issues"
+  },
+  "homepage": "https://github.com/MetaSeth/kwotDemoApp#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "firebase": "^8.2.10",
+    "firebase-admin": "^9.5.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.11",
+    "tslint": "^6.1.3",
+    "typescript": "^4.2.3"
+  }
+}
