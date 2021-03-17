@@ -57,7 +57,6 @@ const btcPriceListRef = firebase.database().ref('btcPrice');
 
 async function getBtcPrice(sinceHour: number) {
     const btcLastPrices = btcPriceListRef.limitToLast(sinceHour * 12);
-    btcPriceListRef.on()
     return btcLastPrices.once('value');
 }
 
@@ -88,6 +87,6 @@ function refresh() {
     setTimeout(refresh, 300000);
 }
 // initialyze the regular polling
-// setTimeout(refresh, 300000);
+ setTimeout(refresh, 300000);
 
 
